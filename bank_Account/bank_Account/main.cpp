@@ -18,19 +18,19 @@ protected:
 private:
     string password;
 public:
-    BankAccount(string account_holder,string address,int age )
+    BankAccount(string account_holder,string address,int age,string password )
     {
         this->account_holder=account_holder;
         this->address=address;
         this->age=age;
-        account_number=rand()/10000;
+        this->password=password;
+        account_number=rand()%10000;
         std::cout << "account number"<<account_number;
     }
 };
 int main(int argc, const char * argv[]) {
     // insert code here...
-    BankAccount b("alfghat","Chemnitz",23);
-    BankAccount a("alfghat","Chemnitz",23);
+    BankAccount b("alfghat","Chemnitz",23,"abc");
     std::cout << "Hello, World!\n";
     return 0;
 }
