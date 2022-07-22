@@ -23,7 +23,8 @@ public:
         this->account_holder=account_holder;
         this->address=address;
         this->age=age;
-        this->account_number=rand();
+        account_number=rand()/10000;
+        std::cout << "account number"<<account_number;
     }
 };
 int main(int argc, const char * argv[]) {
