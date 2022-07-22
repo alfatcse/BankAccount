@@ -30,6 +30,7 @@ public:
 int main(int argc, const char * argv[]) {
     // insert code here...
     BankAccount b("alfghat","Chemnitz",23);
+    BankAccount a("alfghat","Chemnitz",23);
     std::cout << "Hello, World!\n";
     return 0;
 }
