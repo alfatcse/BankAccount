@@ -28,6 +28,8 @@ public:
         std::cout << "account number"<<account_number;
     }
 };
+void create_account()
+{}
 int main(int argc, const char * argv[]) {
     // insert code here...
     BankAccount b("alfghat","Chemnitz",23,"abc");
